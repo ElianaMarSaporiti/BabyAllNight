@@ -11,20 +11,20 @@ function App() {
 
   return (
     <>
-   
-      <Container className='container'>
+       <Container className='container'>
+      
         <Row>
           <Col> <NavBar /></Col>
         </Row>
-      </Container>
+      
 
-       <Container>
+      
         <Row>
           <Col><ItemListContainer
             greeting="Vuelve a descansar" /></Col>
         </Row>
+     
      </Container>
-
     </>
   )
 }

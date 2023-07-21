@@ -9,43 +9,43 @@ import Col from 'react-bootstrap/Col';
 
 
 
-function BasicExample() {
+function NavBar() {
   return (
-    <Row>
+    
     <Navbar >
       <Container>
-       <Col><Navbar.Brand >
+        <Navbar.Brand >
           <img src="data:image/png;base64,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">
-            
+
           </img>
-          Baby All Night</Navbar.Brand></Col> 
-        
+          Baby All Night</Navbar.Brand>
 
-          <Col><Nav >
-            <Nav.Link >Cursos</Nav.Link>
-            <Nav.Link >Asesorias</Nav.Link>
-            <NavDropdown title="Planes de sueño" id="basic-nav-dropdown">
-              <NavDropdown.Item >0 a 6 meses</NavDropdown.Item>
-              <NavDropdown.Item >6 a 12 meses</NavDropdown.Item>
-              <NavDropdown.Item >
-                1 a 3 años
-              </NavDropdown.Item>
-              <NavDropdown.Item >+3 años</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item >
-                Personalizados
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav></Col>
 
-           <Col><Nav><CartWidget className='carrito'/></Nav></Col>
+        <Nav >
+          <Nav.Link >Cursos</Nav.Link>
+          <Nav.Link >Asesorias</Nav.Link>
+          <NavDropdown title="Planes de sueño" id="basic-nav-dropdown">
+            <NavDropdown.Item >0 a 6 meses</NavDropdown.Item>
+            <NavDropdown.Item >6 a 12 meses</NavDropdown.Item>
+            <NavDropdown.Item >
+              1 a 3 años
+            </NavDropdown.Item>
+            <NavDropdown.Item >+3 años</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item >
+              Personalizados
+            </NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+
+        <Nav><CartWidget className='carrito' /></Nav>
       </Container>
     </Navbar>
-    </Row>
+
   );
 }
 
-export default BasicExample;
+export default NavBar;
 
 
 
